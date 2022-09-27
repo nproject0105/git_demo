@@ -1,7 +1,7 @@
 use nwdemo
 
 select 
-[employee ID], [name], [date], [amount], [address], [phone], [email], [fax], [family_member], [Family Address]
+[employee ID], [name], year([date]) YearDate, [amount], [address], [phone], [email], [fax], [family_member], [Family Address]
 into #temp
 from tblEmployee t1
 left join tblEmployeeFamily t2
